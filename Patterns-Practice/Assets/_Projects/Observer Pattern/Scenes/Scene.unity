@@ -475,6 +475,146 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1648791854
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1648791857}
+  - component: {fileID: 1648791856}
+  - component: {fileID: 1648791855}
+  m_Layer: 0
+  m_Name: Audio Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1648791855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648791854}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503cdf2a3ed44aeda7082a592c2222b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!82 &1648791856
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648791854}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: f84cb6918006fb5438bd09968a5606ae, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1648791857
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1648791854}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &2557043011205297438
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -541,6 +681,7 @@ GameObject:
   - component: {fileID: 2557043011206264798}
   - component: {fileID: 2557043011208522016}
   - component: {fileID: 2557043011208522015}
+  - component: {fileID: 2557043011208522017}
   m_Layer: 0
   m_Name: Watermelon
   m_TagString: Untagged
@@ -578,6 +719,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 7977e423937da9b48aac1866c67bb5be, type: 3}
+--- !u!114 &2557043011208522017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2557043011208522014}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc399860f6e34d749558d461b40e3eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Destroyer
 --- !u!4 &2557043011208688958
 Transform:
   m_ObjectHideFlags: 0
@@ -803,6 +957,7 @@ GameObject:
   - component: {fileID: 3910158750146387204}
   - component: {fileID: 3910158750148641734}
   - component: {fileID: 3910158750148641733}
+  - component: {fileID: 3910158750148641735}
   m_Layer: 0
   m_Name: Hamburger
   m_TagString: Untagged
@@ -840,6 +995,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 54b107e50acd7e24b96d7de887c68833, type: 3}
+--- !u!114 &3910158750148641735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3910158750148641732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc399860f6e34d749558d461b40e3eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Destroyer
 --- !u!1 &6528401654571755536
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,6 +1021,7 @@ GameObject:
   - component: {fileID: 6528401654573758160}
   - component: {fileID: 6528401654571755538}
   - component: {fileID: 6528401654571755537}
+  - component: {fileID: 6528401654571755539}
   m_Layer: 0
   m_Name: Olive
   m_TagString: Untagged
@@ -890,6 +1059,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300004, guid: bd232805ec57aa245a81c2df3f69f66a, type: 3}
+--- !u!114 &6528401654571755539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6528401654571755536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc399860f6e34d749558d461b40e3eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Destroyer
 --- !u!4 &6528401654571988016
 Transform:
   m_ObjectHideFlags: 0
@@ -982,6 +1164,7 @@ GameObject:
   - component: {fileID: 6758628273723557977}
   - component: {fileID: 6758628273721628315}
   - component: {fileID: 6758628273721628314}
+  - component: {fileID: 6758628273721628316}
   m_Layer: 0
   m_Name: Cheese
   m_TagString: Untagged
@@ -1019,6 +1202,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 47365cc78e5cfad41badc534e3d2b7e1, type: 3}
+--- !u!114 &6758628273721628316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6758628273721628313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc399860f6e34d749558d461b40e3eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Destroyer
 --- !u!33 &6758628273722559129
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1083,6 +1279,7 @@ GameObject:
   - component: {fileID: 7255315478294538390}
   - component: {fileID: 7255315478292280920}
   - component: {fileID: 7255315478292280919}
+  - component: {fileID: 7255315478292280921}
   m_Layer: 0
   m_Name: Cherry
   m_TagString: Untagged
@@ -1120,6 +1317,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: da4eeef492c0d1842963d6576330682d, type: 3}
+--- !u!114 &7255315478292280921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7255315478292280918}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc399860f6e34d749558d461b40e3eaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  achievementName: Destroyer
 --- !u!4 &7255315478292638326
 Transform:
   m_ObjectHideFlags: 0
