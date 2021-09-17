@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 
 namespace Gisha.PatternsPractice.ObserverPattern.LittleGame.Core
@@ -6,11 +5,14 @@ namespace Gisha.PatternsPractice.ObserverPattern.LittleGame.Core
     public class PlayerController : MonoBehaviour
     {
         [SerializeField] private float moveSpeed = 10f;
+        public bool IsArmed => _isArmed;
 
         private Vector3 _input;
+        private bool _isArmed = false;
 
         private Rigidbody _rigidbody;
         private Animator _animator;
+
 
         private void Awake()
         {
@@ -30,6 +32,11 @@ namespace Gisha.PatternsPractice.ObserverPattern.LittleGame.Core
             }
             else
                 _animator.SetBool("IsRunning", false);
+        }
+
+        public void GetArmed()
+        {
+            _isArmed = true;
         }
     }
 }
