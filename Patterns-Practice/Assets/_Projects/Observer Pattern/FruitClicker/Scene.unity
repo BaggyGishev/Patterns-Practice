@@ -505,6 +505,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503cdf2a3ed44aeda7082a592c2222b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioElements:
+  - audioName: Pop
+    audioClip: {fileID: 8300000, guid: 1214ec38a531e8241ac07e3bccef8542, type: 3}
+  - audioName: CrazyBanana
+    audioClip: {fileID: 8300000, guid: 6c7258d3357c58e4098dde01fb632145, type: 3}
+  - audioName: RealHot
+    audioClip: {fileID: 8300000, guid: 6ad771c315c7ce54db47a190436a18e9, type: 3}
+  - audioName: Click
+    audioClip: {fileID: 8300000, guid: f84cb6918006fb5438bd09968a5606ae, type: 3}
 --- !u!82 &1648791856
 AudioSource:
   m_ObjectHideFlags: 0
@@ -516,7 +525,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: f84cb6918006fb5438bd09968a5606ae, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -732,6 +741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Destroyer
+  audioName: Pop
 --- !u!4 &2557043011208688958
 Transform:
   m_ObjectHideFlags: 0
@@ -875,6 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Crazy Banana
+  audioName: CrazyBanana
   clickCountForAchievement: 10
 --- !u!33 &3910158750145388484
 MeshFilter:
@@ -1008,6 +1019,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Destroyer
+  audioName: Pop
 --- !u!1 &6528401654571755536
 GameObject:
   m_ObjectHideFlags: 0
@@ -1072,6 +1084,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Destroyer
+  audioName: Pop
 --- !u!4 &6528401654571988016
 Transform:
   m_ObjectHideFlags: 0
@@ -1215,6 +1228,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Destroyer
+  audioName: Pop
 --- !u!33 &6758628273722559129
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1330,6 +1344,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Destroyer
+  audioName: Pop
 --- !u!4 &7255315478292638326
 Transform:
   m_ObjectHideFlags: 0
@@ -1458,6 +1473,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   achievementName: Real Hot
+  audioName: RealHot
   clickCountForAchievement: 5
 --- !u!4 &7379405685387644020
 Transform:
