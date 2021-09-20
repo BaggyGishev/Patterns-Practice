@@ -14,7 +14,7 @@ namespace Gisha.PatternsPractice.StrategyPattern
         }
     }
 
-    public class RainbowBehaviour : ColorBehaviour
+    public class RGBBehaviour : ColorBehaviour
     {
         public void DoColorChange(Material material)
         {

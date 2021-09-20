@@ -1,11 +1,11 @@
 namespace Gisha.PatternsPractice.StrategyPattern.ShapeTypes
 {
-    public class RainbowShape : Shape
+    public class RGBShape : Shape
     {
-        public RainbowShape()
+        public RGBShape()
         {
             _motionBehaviour = new StaticBehaviour();
-            _colorBehaviour = new RainbowBehaviour();
+            _colorBehaviour = new RGBBehaviour();
         }
     }
 }

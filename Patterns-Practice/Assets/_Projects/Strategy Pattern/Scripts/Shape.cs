@@ -5,6 +5,8 @@ namespace Gisha.PatternsPractice.StrategyPattern
 {
     public abstract class Shape : MonoBehaviour
     {
+        [SerializeField] private float behaviourDelayInSeconds = 2f;
+
         protected MotionBehaviour _motionBehaviour;
         protected ColorBehaviour _colorBehaviour;
 
@@ -19,14 +21,14 @@ namespace Gisha.PatternsPractice.StrategyPattern
 
         private void Start()
         {
-            StartCoroutine(FiveSecondsCoroutine());
+            StartCoroutine(BehaviourCoroutine());
         }
 
-        private IEnumerator FiveSecondsCoroutine()
+        private IEnumerator BehaviourCoroutine()
         {
             while (true)
             {
-                yield return new WaitForSeconds(5f);
+                yield return new WaitForSeconds(behaviourDelayInSeconds);
 
                 SayYourName();
                 PerformMotion();
