@@ -1,18 +1,22 @@
 using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
 using UnityEngine;
 
-namespace Gisha.PatternsPractice.FactoryPattern
+namespace Gisha.PatternsPractice.FactoryPattern.Tiles
 {
     public class TilesGenerator : MonoBehaviour
     {
         [SerializeField] private int xSize = 3;
         [SerializeField] private int zSize = 3;
+        
         [Space] [SerializeField] private GameObject tilePrefab;
         [SerializeField] private Transform tilesParent;
 
-        private List<GameObject> _tiles = new List<GameObject>();
+        public static Action TilesSpawned;
+
+        private void Awake()
+        {
+            TilesManager.CreateTilesList(xSize, zSize);
+        }
 
         private void OnValidate()
         {
@@ -41,13 +45,16 @@ namespace Gisha.PatternsPractice.FactoryPattern
             Debug.Log("Spawning tiles.");
             for (int z = 0; z < zSize; z++)
             for (int x = 0; x < xSize; x++)
-                _tiles.Add(SpawnTile(x, z));
+                TilesManager.Tiles.Add(SpawnTile(x, z));
+            
+            TilesSpawned?.Invoke();
         }
 
         private void RemoveTiles()
         {
-            foreach (var tile in _tiles) Destroy(tile);
-            _tiles = new List<GameObject>();
+            foreach (var tile in TilesManager.Tiles)
+                Destroy(tile);
+            TilesManager.CreateTilesList(xSize, zSize);
         }
 
         private GameObject SpawnTile(int x, int z)
