@@ -15,9 +15,11 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
             if (IsInitialized)
                 return;
 
+            // Находим все классы абилок.
             var abilityTypes = Assembly.GetAssembly(typeof(Ability)).GetTypes()
                 .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(Ability)));
 
+            // Добавдяем классы абилок в словарь по string имени.
             _abilitiesByName = new Dictionary<string, Type>();
             foreach (var type in abilityTypes)
             {

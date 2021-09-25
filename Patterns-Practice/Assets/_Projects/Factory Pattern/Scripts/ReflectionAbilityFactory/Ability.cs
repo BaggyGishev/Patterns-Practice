@@ -14,6 +14,7 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
         public override void Process()
         {
             Debug.Log($"Player have casted {Name}");
+            VFXEmitter.Emit(Name);
         }
     }
 
@@ -23,6 +24,7 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
         public override void Process()
         {
             Debug.Log($"Player have casted {Name}");
+            VFXEmitter.Emit(Name);
         }
     }
     
@@ -32,6 +34,7 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
         public override void Process()
         {
             Debug.Log($"Player have casted {Name}");
+            VFXEmitter.Emit(Name);
         }
     }
     
@@ -41,6 +44,7 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
         public override void Process()
         {
             Debug.Log($"Player have casted {Name}");
+            VFXEmitter.Emit(Name);
         }
     }
 }
