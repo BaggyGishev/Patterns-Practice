@@ -29,7 +29,7 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
         public static Ability GetAbility(string abilityName)
         {
             Initialize();
-            
+
             if (_abilitiesByName.ContainsKey(abilityName))
             {
                 Type type = _abilitiesByName[abilityName];
@@ -38,6 +38,21 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
             }
 
             return null;
+        }
+
+        public static List<Ability> GetAbilities()
+        {
+            Initialize();
+
+            List<Ability> result = new List<Ability>();
+            Type[] types = _abilitiesByName
+                .Select(x => x.Value)
+                .ToArray();
+
+            foreach (var t in types)
+                result.Add(Activator.CreateInstance(t) as Ability);
+
+            return result;
         }
     }
 }
