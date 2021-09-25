@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Gisha.PatternsPractice.FactoryPattern
+namespace Gisha.PatternsPractice.FactoryPattern.Core
 {
     public class PlayerController : MonoBehaviour
     {
