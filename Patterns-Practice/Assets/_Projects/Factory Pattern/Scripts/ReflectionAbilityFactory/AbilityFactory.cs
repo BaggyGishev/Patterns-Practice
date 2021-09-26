@@ -19,7 +19,7 @@ namespace Gisha.PatternsPractice.FactoryPattern.ReflectionAbilityFactory
             var abilityTypes = Assembly.GetAssembly(typeof(Ability)).GetTypes()
                 .Where(t => t.IsClass && !t.IsAbstract && t.IsSubclassOf(typeof(Ability)));
 
-            // Добавдяем классы абилок в словарь по string имени.
+            // Добавляем классы абилок в словарь по string имени.
             _abilitiesByName = new Dictionary<string, Type>();
             foreach (var type in abilityTypes)
             {
