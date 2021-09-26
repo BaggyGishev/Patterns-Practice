@@ -4,3 +4,5 @@
 **Design patterns in this project:**
 - Observer
 - Strategy
+- Factory
+- Command
