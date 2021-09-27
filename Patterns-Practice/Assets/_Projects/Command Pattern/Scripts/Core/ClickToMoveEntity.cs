@@ -46,6 +46,7 @@ namespace Gisha.PatternsPractice.CommandPattern.Core
             while (elapsed < 1f)
             {
                 transform.position = Vector3.Lerp(startPosition, endPosition, elapsed);
+                transform.rotation = Quaternion.LookRotation((endPosition - startPosition).normalized);
                 elapsed += Time.deltaTime;
 
                 yield return null;
