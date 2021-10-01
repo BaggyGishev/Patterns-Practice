@@ -10,3 +10,5 @@ I've created this repo to keep my practical attempts of understanding various de
 - Strategy
 - Factory
 - Command
+- Adapter
+- Facade
